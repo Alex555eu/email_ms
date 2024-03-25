@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You for Creating an Account</title>
+    <style>
+    </style>
+</head>
+<body>
+<div style="width: 100%; display: flex; justify-content: center;">
+    <div style="padding: 5em; width: 80%; align-self:center; background-color: #2D3250; border-radius: 15px; color: white; font-family: Arial, sans-serif;">
+        <div>
+            <h1>Thank You for Creating an Account, <span style="color: #F6B17A;" th:text="${emailRecipientDto.name}"></span> !</h1>
+            <p>We are delighted that you have chosen to join us. Your account has been successfully created.</p>
+            <p>If you have any questions or need assistance, please feel free to contact us.</p>
+            <p>Best Regards,<br>The Team</p>
+        </div>
+        <div class="footer" style="margin-top: 10vh;">
+            <p>Questions? Contact us at <span style="text-decoration: none; color: #F6B17A;">support@example.com</span></p>
+            <p>&copy; 2024 Your Company Name. All rights reserved.</p>
+        </div>
+        <a>
+            <img src="https://example.com/path/to/icon.png" alt="Icon" style="width: 100px; height: 100px;">
+        </a>
+    </div>
+</div>
+</body>
+</html>

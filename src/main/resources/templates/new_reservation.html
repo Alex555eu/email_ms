@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    </style>
+</head>
+<body>
+<div style="width: 100%; display: flex; justify-content: center;">
+    <div style="padding: 5em; width: 80%; align-self:center; background-color: #2D3250; border-radius: 15px; color: white; font-family: Arial, sans-serif;">
+        <p>Dear <span th:text="${reservationDto.emailRecipientDto.name}" style="color: #F6B17A;"></span>,</p>
+        <p>We are pleased to confirm your reservation at the <strong><span th:text="${reservationDto.facilityDto.name}"></span></strong> on <span th:text="${reservationDto.date}" style="color: #F6B17A;"></span>.</p>
+        <h3>Reservation Details:</h3>
+        <ul>
+            <li><strong>Location:</strong> <span th:text="${reservationDto.facilityDto.addressDto}"></span></li>
+            <li><strong>Type:</strong> <span th:text="${reservationDto.facilityDto.type}"></span></li>
+            <li><strong>Date:</strong> <span th:text="${reservationDto.date}"></span></li>
+            <li><strong>Time:</strong> <span th:text="${reservationDto.startHour}"></span> to <span th:text="${reservationDto.endHour}"></span></li>
+        </ul>
+        <div class="footer" style="margin-top: 10vh;">
+            <p>Questions? Contact us at <span style="text-decoration: none; color: #F6B17A;">support@example.com</span></p>
+            <p>&copy; 2024 Your Company Name. All rights reserved.</p>
+        </div>
+        <a>
+            <img src="https://example.com/path/to/icon.png" alt="Icon" style="width: 100px; height: 100px;">
+        </a>
+    </div>
+</div>
+</body>
+</html>
